@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Using DIVs with Table Styles for Layout</title>
+    <style>
+        span { font-weight: bold; }
+        .cell {
+            display: table-cell;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: table;">
+        <div style="display: table-row">
+            <div class="cell" style="width: 60%"><span>Cell One</span></div>
+            <div class="cell"><span>Cell Two</span></div>
+        </div>
+        <div style="display: table-row">
+            <div class="cell"><span>Cell Three</span></div>
+            <div class="cell"><span>Cell Four</span></div>
+        </div>
+    </div>
+</body>
+</html>

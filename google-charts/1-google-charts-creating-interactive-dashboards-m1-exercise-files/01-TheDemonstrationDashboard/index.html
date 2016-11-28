@@ -1,0 +1,80 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <style>
+        .label-input-label {
+            max-width: 100px;
+        }
+
+        @media (min-width:768px) {
+            .col-sm-6 {
+                width: calc(50% - 30px);
+            }
+        }
+    </style>
+
+    <title>Interactive Dashboard</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="dashboard.js"></script>
+
+</head>
+<body>
+    <div class='container-fluid'>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div id="divIncomeOverTime"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div id="divSalesByModel"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div id="divExpensesOverTimeContainer">
+                    <div id="divExpensesOverTime"></div>
+                    <div id="divExpensesRangeSlider"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div id="divSalesByRegionContainer" class="row">
+                    <div id="divSalesByRegion" class="col-xs-9"></div>
+                    <div id='divSalesRegionCategoryPicker' class="col-xs-3"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- used to create charts displayed in a tooltip -->
+        <div id="divTooltipChart" style="display: none;">
+        </div>
+
+        <!-- the modal for the drill down for sales by model/region -->
+        <div class="modal fade" id="divDetailPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Sales By Model and Region</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id='divDetailChart'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- latest jQuery - IE 8 and lower are not supported with this version -->
+    <script src='https://code.jquery.com/jquery-2.2.3.min.js'></script>
+
+    <!-- latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>

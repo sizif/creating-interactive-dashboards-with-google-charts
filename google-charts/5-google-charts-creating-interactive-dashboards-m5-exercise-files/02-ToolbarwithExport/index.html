@@ -1,0 +1,32 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Export Toolbar</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="module5-toolbar2.js"></script>
+</head>
+<body>
+
+    <div id="divExpensesOverTimeChart"></div>
+
+    <div style="border: 1px solid black; padding: 10px; width: 150px;">
+        <b>Download Data</b><br /><br />
+
+        <input type="radio" name="rdoDataDownload" id="r1" onclick="SetupToolbar()"
+               value="https://docs.google.com/spreadsheets/d/1SL8zq3X1PtzaHFrc7JYZwvOJiQFANf17ygG_fyNHN0I/gviz/tq?headers=1&range=A:F" checked />Income<br />
+        <input type="radio" name="rdoDataDownload" id="r2" onclick="SetupToolbar()"
+               value="https://docs.google.com/spreadsheets/d/1SL8zq3X1PtzaHFrc7JYZwvOJiQFANf17ygG_fyNHN0I/gviz/tq?gid=1130516301&headers=1&range=A:F" />Sales By Model<br />
+        <input type="radio" name="rdoDataDownload" id="r3" onclick="SetupToolbar()"
+               value="https://docs.google.com/spreadsheets/d/1SL8zq3X1PtzaHFrc7JYZwvOJiQFANf17ygG_fyNHN0I/gviz/tq?gid=192555712&headers=1&range=A:F" />Expenses<br />
+        <input type="radio" name="rdoDataDownload" id="r4" onclick="SetupToolbar()"
+               value="https://docs.google.com/spreadsheets/d/1SL8zq3X1PtzaHFrc7JYZwvOJiQFANf17ygG_fyNHN0I/gviz/tq?gid=1124504831&headers=1&range=A:D" />Sales By Region<br />
+
+        <br />
+        <div id="divToolbar"></div>
+
+    </div>
+
+</body>
+</html>

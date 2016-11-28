@@ -1,0 +1,35 @@
+Look through slides!
+
+https://developers.google.com/chart/
+
+1-04 formatters
+There are a few additional formatters available, like the pattern format,
+which allow you to make complex strings from the contents of columns.
+
+gviz/tq
+google visualization / table query
+
+gid=0 refers to the tab number (i.e. the sheet) from the spreadsheets
+headers=1
+
+EVENTS you can respond to in google charts
+
+ready
+select
+error
+
+Let's start with the call to get selection. This is a benefit of a wonderful feature known as closure. Closure means an anonymous function has access to its parent function's scope and variables. You can use it on anon function to avoid global variables.
+
+##################################
+
+COMBINE TYPEAHEAD AND GOOGLE MAPS!
+
+https://github.com/sgruhier/typeahead-addresspicker
+
+combine typeahead and open street map
+
+https://photon.komoot.de/
+##################################
+
+&range=A:F
+
